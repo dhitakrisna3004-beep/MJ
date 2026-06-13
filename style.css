@@ -1,0 +1,149 @@
+/* --- Reset & Gaya Dasar --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0f0f12;
+  color: #ffffff;
+  padding-bottom: 40px;
+}
+
+/* --- Header / Jumbotron --- */
+.main-header {
+  background: linear-gradient(135deg, #1a1a24 0%, #000000 100%);
+  text-align: center;
+  padding: 60px 20px;
+  border-bottom: 3px solid #d4af37; /* Warna Emas */
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.15);
+}
+
+.main-header h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.2);
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #d4af37; /* Emas */
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+/* --- Main Layout --- */
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+}
+
+/* --- Grid Kartu Lagu --- */
+.music-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* --- Komponen Kartu --- */
+.music-card {
+  background-color: #1a1a24;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #2a2a3a;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Efek Hover saat Mouse di atas Kartu */
+.music-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
+  border-color: #d4af37;
+}
+
+/* Placeholder Gambar/Warna Background Kartu */
+.card-image {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Warna unik per lagu (Bisa diganti link gambar nanti) */
+.img-thriller { background: linear-gradient(45deg, #8b0000, #330000); }
+.img-billie { background: linear-gradient(45deg, #104e8b, #001f3f); }
+.img-beatit { background: linear-gradient(45deg, #ff4500, #4a0000); }
+.img-smooth { background: linear-gradient(45deg, #708090, #1c2833); }
+.img-bad { background: linear-gradient(45deg, #111, #444); }
+.img-blackwhite { background: linear-gradient(45deg, #fff, #000); }
+.img-heal { background: linear-gradient(45deg, #228b22, #003300); }
+.img-man { background: linear-gradient(45deg, #9932cc, #2a0033); }
+.img-dontstop { background: linear-gradient(45deg, #ff8c00, #ffd700); }
+.img-earth { background: linear-gradient(45deg, #008b8b, #004d4d); }
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  color: #aaaaaa;
+  margin-bottom: 20px;
+}
+
+/* --- Tombol Putar Musik --- */
+.play-btn {
+  display: inline-block;
+  background-color: #d4af37;
+  color: #000000;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.play-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transform: scale(1.05);
+}
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+  margin-top: 60px;
+  padding: 20px;
+  font-size: 0.85rem;
+  color: #666666;
+  border-top: 1px solid #2a2a3a;
+}
